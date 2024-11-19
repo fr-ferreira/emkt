@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Email Marketing LATAM Pass</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    a {
+      color: white;
+    }
+
+    table {
+      border-spacing: 0;
+      width: 100%;
+      max-width: 690px;
+      margin: 0 auto;
+      background-color: #ffffff;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header {
+      background-color: #10004f;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header a {
+      color: #ff4a4a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header img {
+      width: 125px;
+      height: 40px;
+      padding-left: 20px;
+    }
+
+    .banner {
+      text-align: center;
+    }
+
+    .banner-smart img {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+      color: #2b2b82;
+    }
+
+    .content h1 {
+      font-size: 32px;
+      font-style: italic;
+      margin: 10px 0;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+
+    .content-cards-white {
+      width: 100%;
+      min-height: 45px;
+      max-height: auto;
+      padding: 0;
+      text-align: right;
+      margin-right: 25px;
+      color: #2b2b82;
+      background-color: white;
+      float: right;
+    }
+
+    .content-cards-white p {
+      display: inline-block;
+    }
+
+    .content-cards-white img {
+      width: 35px;
+      height: 30px;
+      display: flex;
+      margin-right: auto;
+    }
+
+    .content-spacer {
+      width: 60%;
+      height: 35px;
+      padding-top: 20px;
+      text-align: center;
+      color: #2b2b82;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content-spacer img {
+      width: 35px;
+      height: 30px;
+      display: flex;
+      margin-right: auto;
+    }
+
+    .content-spacer p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+
+    .content-red-box {
+      min-width: 80px;
+      min-height: 15px;
+      max-height: auto;
+      color: white;
+      display: inline-block;
+      background-color: #ee1752;
+      border-radius: 10px;
+      text-decoration: none;
+      list-style: none;
+      padding: 8px;
+      margin-left: 10px;
+    }
+
+    .content-red-box a {
+      color: white;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .cards-cities {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #0c0031;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 15px;
+    }
+
+    .cities-left {
+      width: 60%;
+      height: auto;
+      float: left;
+    }
+
+    .cities-left p {
+      font-size: 12px;
+      text-align: left;
+    }
+
+    .cities-left .pontos {
+      font-size: 9px;
+      text-align: left;
+    }
+
+    .cities-right {
+      width: 40%;
+      height: auto;
+      float: left;
+    }
+
+    .cities-right p {
+      font-size: 12px;
+      text-align: left;
+      display: flex;
+      align-items: baseline;
+      justify-content: end;
+    }
+
+    .magenta-flow {
+      color: #ff0e51;
+      font-size: 22px;
+      float: left;
+    }
+
+    .stage-cards {
+      color: #ffffff;
+      border-radius: 8px;
+      margin: 10px auto;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 0;
+    }
+
+    .card {
+      background-color: #10004f;
+      color: #ffffff;
+      border-radius: 8px;
+      margin: 10px auto;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card-vertical {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .button-smart {
+      width: 90%;
+      background-color: #ff4a4a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    .button {
+      width: 83.333%;
+      background-color: #ff4a4a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    .spacer-left {
+      width: 40%;
+      height: 1px;
+      background-color: grey;
+      display: flex;
+      margin-left: auto;
+    }
+
+    .spacer-right {
+      width: 40%;
+      height: 1px;
+      background-color: grey;
+      display: flex;
+      margin-right: auto;
+    }
+
+    .footer {
+      background-color: #10004f;
+      color: #ffffff;
+      text-align: left;
+      padding: 20px;
+      font-size: 12px;
+    }
+
+    .footer a {
+      color: #ff4a4a;
+      text-decoration: none;
+    }
+
+    .card-vertical {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0;
+    }
+
+    .card td {
+      vertical-align: top;
+    }
+
+    .card-image {
+      width: 45%;
+    }
+
+    .stage-footer {
+      width: 70%;
+      height: 60px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+
+    .stage-footer img {
+      width: 23px;
+      height: 23px;
+      padding: 5px;
+      margin-left: 10px;
+      display: inline-block;
+    }
+
+    .stage-footer p {
+      font-size: 18px;
+    }
+
+    .card-content-dark {
+      width: 100%;
+      padding: 10px 20px;
+      text-align: left;
+      color: white;
+      background-color: #744ce5;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .pos-footer-text {
+      width: 90%;
+      height: 240px;
+      display: flex;
+      padding: 12px;
+      text-align: justify;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pos-footer-img {
+      width: 105px;
+      height: 100px;
+      padding: 20px;
+    }
+
+    .pos-footer-img img {
+      width: 105px;
+      height: 35px;
+      padding: 20px;
+    }
+
+    .text-rodape {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      color: #444444;
+      margin-bottom: 50px;
+    }
+
+    .card-content {
+      padding: 0;
+      margin-top: 15px;
+      text-align: center;
+      color: white;
+    }
+
+    .card-content h2 {
+      color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .card-image,
+      .card-content {
+        padding: 0;
+        text-align: center;
+      }
+
+      .pos-footer-text {
+        width: 90%;
+        height: 520px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table bgcolor="#ffffff" role="presentation">
+    <tr>
+      <td class="header">
+        <img src="https://fruitdigital.com.br/emkt/mrm/img/img01.png" alt="logo LATAM">
+      </td>
+    </tr>
+    <tr>
+      <td class="content-cards-white">
+        <p>WAGNER, você tem <strong>21.937 pontos</strong> </p><a class="content-red-box" href="#">Ver extrato</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="banner">
+        <img src="https://fruitdigital.com.br/emkt/mrm/img/banner.png" alt="Promoções LATAM Pass">
+      </td>
+    </tr>
+    <tr>
+      <td class="content">
+        <p
+          style=" width: 90%; margin: 0 auto; font-style:italic; font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif">
+          Olá Cliente,</p>
+        <br>
+        <p
+          style="width: 90%; margin: 0 auto; font-style:italic; font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maece.</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="cards">
+        <div class="stage-cards">
+          <div class="card">
+            <img src="https://fruitdigital.com.br/emkt/mrm/img/img4_photo.png" alt="São Paulo - Roma">
+            <div class="card-content">
+              <p>Rio de Janeiro</p>
+              <h3>Melbourne</h3>
+              <div class="cards-cities">
+                <div class="cities-left">
+                  <p>A partir de</p>
+                  <span class="magenta-flow">49.824 </span>
+                  <p class="pontos">pontos / <br>Trecho</p>
+                </div>
+                <div class="cities-right">
+                  <p>+ taxas de R$228,90</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button" style="color: #FFFFFF;">Juntar Agora</a>
+        </div>
+
+
+        <div class="stage-cards">
+          <div class="card">
+            <img src="https://fruitdigital.com.br/emkt/mrm/img/img5_photo.png" alt="São Paulo - Roma">
+            <div class="card-content">
+              <p>Rio de Janeiro</p>
+              <h3>Melbourne</h3>
+              <div class="cards-cities">
+                <div class="cities-left">
+                  <p>A partir de</p>
+                  <span class="magenta-flow">49.824 </span>
+                  <p class="pontos">pontos / <br>Trecho</p>
+                </div>
+                <div class="cities-right">
+                  <p>+ taxas de R$228,90</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button" style="color: #FFFFFF;">Juntar Agora</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="content-spacer">
+        <hr class="spacer-left" />
+        <img src="https://fruitdigital.com.br/emkt/mrm/img/img_9_buy.png" alt="Promo do Buy">
+        <hr class="spacer-right" />
+      </td>
+    </tr>
+    <tr>
+      <td class="banner-smart">
+        <img src="https://fruitdigital.com.br/emkt/mrm/img/img2_banner_cell.png" alt="Promo do Shopping">
+      </td>
+    </tr>
+    <tr>
+      <td class="content">
+        <a href="#" class="button-smart" style="color: #FFFFFF;">Juntar Agora</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="content">
+        <h1>Mais pontos para você!</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="content">
+        <table role="presentation" class="card-vertical" width="100%">
+          <tr>
+            <td class="card-image">
+              <img src="https://fruitdigital.com.br/emkt/mrm/img/img8_photo.png" alt="Imagem">
+            </td>
+            <td class="card-content-dark">
+              <h2 style="margin: 0; font-size: 18px;">Multiplique
+                seus pontos no
+                LATAM Pass</h2>
+              <p style="margin: 10px 0; font-size: 14px; line-height: 1.5;">
+                Confira as ofertas
+                dos nossos parceiros
+                e acumule mais pontos!
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td class="footer">
+        <div class="stage-footer">
+          <img src="https://fruitdigital.com.br/emkt/mrm/img/icon1.png" alt="icone" />
+          <p> Ajuda e Suporte ></p>
+        </div>
+        <div class="stage-footer">
+          <img src="https://fruitdigital.com.br/emkt/mrm/img/icon2.png" alt="icone" />
+          <p> Minha Conta ></p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="pos-footer-img">
+        <img src="https://fruitdigital.com.br/emkt/mrm/img/img1_logo_latam.png" alt="logo rodape" />
+      </td>
+    </tr>
+    <tr>
+      <td class="pos-footer-text">
+        <p class="text-rodape">
+          Saldo atualizado em 30/03/2023.
+          <br><br>
+          JUNTE PONTOS<br>
+          Consulte as condições válidas para acúmulo de pontos de cada parceiro no site
+          https://latampass.latam.com/pt_br/.
+          <br><br>
+          RESGATE PRODUTOS<br>
+          Ofertas sujeitas à disponibilidade e alteração de preço em pontos. O resgate será concluído apenas com a
+          confirmação enviada no e-mail cadastrado no LATAM Pass, sendo certo que a inclusão do produto no carrinho não
+          garante o resgate ou a disponibilidade de estoque. A LATAM Pass não se responsabiliza por resgates não
+          realizados em razão de falhas de comunicação de dados ou quaisquer
+          <br><br>
+          Conheça aqui nossa política de privacidade.<br>
+          Se você não deseja mais receber nossos e-mails, cancele sua inscrição aqui.<br>
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
